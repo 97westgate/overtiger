@@ -60,6 +60,27 @@
             letter-spacing: 1px;
         }
         
+        .contact {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 2s cubic-bezier(0.19, 1, 0.22, 1) forwards 1.5s;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact a:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+        
         .background {
             position: fixed;
             top: 0;
@@ -260,6 +281,9 @@
     <div class="container">
         <h1>overtiger</h1>
         <p>A boutique studio in Brooklyn, NY specializing in making beautiful and fun experiences come to life digitally and physically.</p>
+        <div class="contact">
+            For assistance, contact <a href="mailto:y@overtiger.com">y@overtiger.com</a>
+        </div>
     </div>
 </body>
 </html> 
