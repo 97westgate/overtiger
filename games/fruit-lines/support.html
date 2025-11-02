@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Fruit Lines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #FFD700;
+            overflow-x: hidden;
+        }
+
+        /* Header Image with Parallax */
+        .header-image-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        .header-image-container::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 15%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 120%;
+            object-fit: cover;
+            object-position: center;
+            transform: translateY(0);
+            will-change: transform;
+        }
+
+        .page-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #FC1183;
+            border-bottom: 3px solid #FFD700;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #FC1183;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #666;
+        }
+        a {
+            color: #FC1183;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .fruit-emoji {
+            font-size: 2em;
+            margin-right: 10px;
+        }
+        .contact-box {
+            background: #FFF8DC;
+            border-left: 4px solid #FC1183;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .faq-item {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #FC1183;
+            margin-bottom: 8px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #FC1183;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 10px 10px 10px 0;
+        }
+        .button:hover {
+            background: #e00f75;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .header-image-container {
+                height: 250px;
+                margin-top: 0;
+            }
+
+            .page-wrapper {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+    <script src="nav.js"></script>
+</head>
+<body>
+    <div id="nav-container"></div>
+
+    <div class="header-image-container">
+        <img src="../../Header.png" alt="Fruit Lines Header" class="header-image" id="headerImage">
+    </div>
+
+    <div class="page-wrapper">
+    <div class="container">
+        <h1>Fruit Lines - Support</h1>
+        
+        <p>Welcome to Fruit Lines support! We're here to help you get the most out of your fruity puzzle experience.</p>
+
+        <div class="contact-box">
+            <h3>📧 Need Help?</h3>
+            <p>Contact us at: <a href="mailto:support@overtiger.com"><strong>support@overtiger.com</strong></a></p>
+            <p>We typically respond within 24-48 hours.</p>
+        </div>
+
+        <a href="privacy-policy.html" class="button">Privacy Policy</a>
+        <a href="mailto:support@overtiger.com" class="button">Email Support</a>
+
+        <h2>🎮 How to Play</h2>
+        
+        <h3>Basic Rules</h3>
+        <ol>
+            <li><strong>Move Fruit:</strong> Tap a fruit, then tap an empty cell to move it</li>
+            <li><strong>Create Lines:</strong> Match 5 or more fruit of the same type in a row (horizontal, vertical, or diagonal)</li>
+            <li><strong>Score Points:</strong> Each fruit cleared gives you 2 points</li>
+            <li><strong>Plan Ahead:</strong> New fruit appear after each move, so think strategically!</li>
+        </ol>
+
+        <h3>Juice Meter & Power-Ups</h3>
+        <p>The unique <strong>Juice Meter</strong> fills as you clear lines. When it reaches 100%, you earn a power-up!</p>
+        <ul>
+            <li>🧃 <strong>Juice Bomb:</strong> Clear ALL fruit of one color from the board</li>
+            <li>You can store up to 2 power-ups at once</li>
+            <li>Tap a power-up, then tap any fruit to use it</li>
+        </ul>
+
+        <h3>Tips for High Scores</h3>
+        <ul>
+            <li>🎯 Create longer lines (6+ fruit) for more points</li>
+            <li>🧠 Plan moves to set up multiple lines at once</li>
+            <li>⚡ Use power-ups strategically when the board gets full</li>
+            <li>👀 Watch the "Next Fruit" preview to plan ahead</li>
+        </ul>
+
+        <h2>❓ Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How do I save my progress?</div>
+            <div class="faq-answer">A: Your high score is automatically saved on your device. No account needed!</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How do I get power-ups?</div>
+            <div class="faq-answer">A: Fill the juice meter by clearing lines! Each 100% fills gives you one power-up.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I remove ads?</div>
+            <div class="faq-answer">A: Currently, Fruit Lines is ad-supported to keep it free for everyone. We may add an ad-free option in the future!</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What happens when the board fills up?</div>
+            <div class="faq-answer">A: Game Over! But don't worry - you can start a new game and try to beat your high score.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How do I turn off sound?</div>
+            <div class="faq-answer">A: Tap the speaker icon in the top-right corner to toggle sound on/off.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Does Fruit Lines have leaderboards?</div>
+            <div class="faq-answer">A: Not yet, but we're considering adding Game Center leaderboards in a future update!</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: I found a bug. How do I report it?</div>
+            <div class="faq-answer">A: Email us at <a href="mailto:support@overtiger.com">support@overtiger.com</a> with details about the issue. Screenshots help!</div>
+        </div>
+
+        <h2>🔧 Troubleshooting</h2>
+
+        <h3>App Crashes or Freezes</h3>
+        <ol>
+            <li>Force close the app and reopen it</li>
+            <li>Restart your device</li>
+            <li>Make sure you have the latest version from the App Store</li>
+            <li>If problem persists, contact us at <a href="mailto:support@overtiger.com">support@overtiger.com</a></li>
+        </ol>
+
+        <h3>Ads Not Loading</h3>
+        <ul>
+            <li>Check your internet connection</li>
+            <li>Sometimes ads aren't available - this is normal</li>
+            <li>The game will still work perfectly without ads</li>
+        </ul>
+
+        <h3>Game Won't Start</h3>
+        <ul>
+            <li>Delete and reinstall the app (your high score is stored locally and will be lost)</li>
+            <li>Make sure you have enough storage space</li>
+            <li>Check for iOS updates</li>
+        </ul>
+
+        <h2>💡 Feature Requests</h2>
+        <p>Have an idea to make Fruit Lines even better? We'd love to hear it! Email us at <a href="mailto:support@overtiger.com">support@overtiger.com</a> with your suggestions.</p>
+
+        <h2 id="privacy">🔒 Privacy & Data</h2>
+        <p>Your privacy is important to us. We only collect anonymous analytics data to improve the game.</p>
+        <ul>
+            <li>❌ No personal information collected</li>
+            <li>❌ No account required</li>
+            <li>❌ No location tracking</li>
+            <li>✅ Anonymous usage analytics (Firebase)</li>
+            <li>✅ Ad serving data (AdMob)</li>
+        </ul>
+        <p><a href="privacy-policy.html" class="button">Read Full Privacy Policy</a></p>
+
+        <h2>📱 System Requirements</h2>
+        <ul>
+            <li><strong>Platform:</strong> iOS 14.0 or later</li>
+            <li><strong>Devices:</strong> iPhone and iPad</li>
+            <li><strong>Storage:</strong> ~10 MB</li>
+            <li><strong>Internet:</strong> Optional (required for ads only)</li>
+        </ul>
+
+        <h2>ℹ️ About Fruit Lines</h2>
+        <p>Fruit Lines is a modern take on the classic Lines puzzle game. Match colorful fruit to create satisfying combos and rack up high scores. Perfect for quick breaks or long gaming sessions!</p>
+
+        <p><strong>Version:</strong> 1.0</p>
+        <p><strong>Developer:</strong> Chris Westgate</p>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
+        <h2>📧 Contact Us</h2>
+        <p>For support, feedback, or just to say hi:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@overtiger.com">support@overtiger.com</a></p>
+
+        <p style="text-align: center; color: #666; margin-top: 40px;">
+            <small>© 2025 Overtiger LLC. All rights reserved.</small>
+        </p>
+    </div>
+    </div>
+
+    <script>
+        // Mark current page as active
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                const supportLink = document.getElementById('nav-support');
+                if (supportLink) {
+                    supportLink.classList.add('active');
+                }
+            }, 0);
+        });
+
+        // Parallax scroll effect for header image
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const headerImage = document.getElementById('headerImage');
+            const parallaxSpeed = 0.5;
+            headerImage.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+        });
+    </script>
+</body>
+</html>
+
